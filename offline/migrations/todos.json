@@ -1,0 +1,21 @@
+{
+    "Table": {
+        "TableName": "TodoTable",
+        "keySchema": [
+            {
+                "AttributeName": "id",
+                "KeyType": "HASH"
+            }
+        ],
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "id",
+                "AttributeType": "S"
+            }
+        ],
+        "ProvisionedThroughut": {
+            "ReadCapacityUnits": 1,
+            "WriteCapacityUnits": 1
+        }
+    }
+}
